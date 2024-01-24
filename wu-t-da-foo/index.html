@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFUU</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/codemirror-5.65.16/lib/codemirror.css" />
+    <link rel="stylesheet" href="assets/plugins/codemirror-5.65.16/theme/dracula.css" />
+</head>
+<body id="public" class="noI">
+<style class="realtime"></style>
+<div class="error-message alert alert-danger text-center"></div>
+<div class="container-fluid">
+    <div class="responsive-buttons">
+        <button class="resp btn btn-primary" data-screen="lg">
+            <i class="fa fa-desktop" data-screen="lg"></i>
+        </button>
+        <button class="resp btn btn-warning" data-screen="md">
+            <i class="fa fa-tablet" data-screen="md"></i>
+        </button>
+        <button class="resp btn btn-info" data-screen="sm">
+            <i class="fa fa-mobile" data-screen="sm"></i>
+        </button>
+        <button class="dl btn btn-success">
+            Save  <i class="fa fa-save" data-screen="lg"></i>
+        </button>
+    </div>
+
+    <div class="row">
+        <div class="col-4" main-left>
+            <h1>KYUSI</h1>
+            <div class="form-group">
+                <label for="staticEmail" class="col-12 col-form-label text-start">Wufoo URL</label>
+                <div class="col-sm-10 input-group">
+                    <input type="text" class="wufoo-url form-control" value="" placeholder="Insert the public wufoo form URL here" />
+                    <div class="input-group-append">
+                        <button class="refresh btn btn-secondary">
+                            <i class="fa fa-refresh"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group position-relative editor-container">
+                <textarea class="css form-control"></textarea>
+            </div>
+        </div>
+        <div class="col-8" main-right>
+            <div class="iframesss"></div>
+        </div>
+    </div>
+    <div class="style"></div>
+    <div class="script"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="assets/plugins/codemirror-5.65.16/lib/codemirror.js"></script>
+<script src="assets/plugins/codemirror-5.65.16/mode/css/css.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

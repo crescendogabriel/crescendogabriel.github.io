@@ -1,0 +1,86 @@
+@import "../plugins/bootstrap/scss/bootstrap";
+
+.full-width {
+    width: 100%;
+    min-height: 100vh;
+}
+
+* {
+    &:focus {
+        box-shadow: none!important;
+    }
+}
+
+body {
+    background-color: #EEEEEE;
+    margin:0!important;
+    padding:0!important;
+
+    .editor-container {
+        min-height: 88%;
+    }
+
+    .css {
+        min-height: 100vh;
+        background-color: #19221c;
+        color: #fff;
+        resize: none;
+
+        &:focus {
+            background-color: #19221c;
+            color: #fff;
+        }
+    }
+    
+    .CodeMirror {
+        text-align: left;
+        font-size: 14px;
+        min-height: 100vh;
+    }
+}
+
+.iframesss {
+    background-color: #EEEEEE;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    .col-4 & {
+        #container {
+            width: 100%!important;
+            max-width: 960px;
+        }
+    }
+}
+
+.responsive-buttons {
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 9;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0 1rem #b3b3b3cf;
+
+    button {
+        width: 42px;
+
+        &:last-child {
+            width: auto;
+            margin-left: 0.75rem;
+        }
+    }
+}
+
+.error-message {
+    display: none;
+}
+
+[main-left] {
+    background-color: #abeabe;
+    min-height: 100vh;
+}
+
+.form-group {
+    margin:0.5rem 0;
+}
