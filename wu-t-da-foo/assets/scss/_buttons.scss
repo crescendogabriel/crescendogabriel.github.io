@@ -1,0 +1,18 @@
+.responsive-buttons {
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 9;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0 1rem #b3b3b3cf;
+
+    button {
+        width: 42px;
+
+        &:last-child {
+            width: auto;
+            margin-left: 0.75rem;
+        }
+    }
+}
