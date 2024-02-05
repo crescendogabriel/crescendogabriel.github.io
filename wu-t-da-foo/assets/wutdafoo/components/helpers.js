@@ -47,7 +47,14 @@ const app = {
     ajax(url) {
         const request = new XMLHttpRequest();
         request.open("GET", url, false);
-        request.send(null);
+        try {
+            request.send(null);
+        } catch(e) {
+            const msg = `${config.errorMsg} <br> <a href="${url}" target="_blank">${url}</a>.`;
+            config.errorBox.innerHTML = msg;
+            config.errorBox.style.display = 'block';
+            console.error(msg);
+        }
 
         if (request.status == 200) {
             config.errorBox.style.display = 'none';
@@ -55,7 +62,7 @@ const app = {
         }
 
         if (request.status == 400) {
-            const msg = `${config.errorMsg} <br> <a href="${cssHref}" target="_blank">${cssHref}</a>.`;
+            const msg = `${config.errorMsg} <br> <a href="${url}" target="_blank">${url}</a>.`;
             config.errorBox.innerHTML = msg;
             config.errorBox.style.display = 'block';
             console.error(msg);
